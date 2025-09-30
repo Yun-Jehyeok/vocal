@@ -9,7 +9,7 @@ export default function App() {
     const [currentScreen, setCurrentScreen] = useState("attendance");
 
     return (
-        <div className="bg-background">
+        <div className="bg-background max-w-[480px] mx-auto min-h-screen">
             {/* Header */}
             <header className="bg-white backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border px-4 py-3 fixed w-full top-0 z-50">
                 <div className="flex items-center justify-between">
@@ -26,7 +26,7 @@ export default function App() {
 
             {/* Bottom Navigation */}
             <nav
-                className="fixed inset-x-0 bottom-0 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-t border-border px-4 z-50"
+                className="fixed max-w-[480px] mx-auto inset-x-0 bottom-0 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-t border-border px-4 z-50"
                 role="tablist"
                 style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
             >
